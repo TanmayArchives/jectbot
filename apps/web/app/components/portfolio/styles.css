@@ -1,0 +1,86 @@
+.portfolio-overview {
+  padding: 2rem;
+  background: var(--background-secondary);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-header {
+  margin-bottom: 2rem;
+}
+
+.portfolio-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  padding: 1rem;
+  background: var(--background);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.token-holdings,
+.defi-positions {
+  margin-top: 2rem;
+}
+
+.token-list,
+.positions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.token-item,
+.position-item {
+  padding: 1rem;
+  background: var(--background);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.token-info,
+.position-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.token-value,
+.position-details {
+  text-align: right;
+}
+
+.change {
+  font-size: 0.875rem;
+}
+
+.positive { color: var(--color-success); }
+.negative { color: var(--color-error); }
+
+.position-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: center;
+} 

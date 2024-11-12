@@ -1,0 +1,72 @@
+{"level":"warn","message":"Telegram bot not started: Using dummy token","timestamp":"2024-11-12T13:16:52.207Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T13:16:52.214Z"}
+{"level":"warn","message":"Bot commands not initialized: Using dummy token","timestamp":"2024-11-12T13:18:33.632Z"}
+{"level":"warn","message":"Telegram bot not started: Using dummy token","timestamp":"2024-11-12T13:18:33.695Z"}
+{"level":"warn","message":"Bot commands not initialized: Using dummy token","timestamp":"2024-11-12T13:24:00.402Z"}
+{"level":"warn","message":"Telegram bot not started: Using dummy token","timestamp":"2024-11-12T13:24:00.465Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T13:24:00.466Z"}
+{"level":"warn","message":"Bot commands not initialized: Using dummy token","timestamp":"2024-11-12T13:42:29.873Z"}
+{"level":"warn","message":"Telegram bot not started: Using dummy token","timestamp":"2024-11-12T13:42:29.938Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T13:42:29.940Z"}
+{"level":"warn","message":"Bot commands not initialized: Using dummy token","timestamp":"2024-11-12T13:48:03.201Z"}
+{"level":"warn","message":"Telegram bot not started: Using dummy token","timestamp":"2024-11-12T13:48:03.272Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T13:48:03.279Z"}
+{"level":"warn","message":"Bot commands not initialized: Using dummy token","timestamp":"2024-11-12T13:48:34.262Z"}
+{"level":"warn","message":"Telegram bot not started: Using dummy token","timestamp":"2024-11-12T13:48:34.300Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T13:48:34.302Z"}
+{"level":"warn","message":"Bot commands not initialized: Using dummy token","timestamp":"2024-11-12T13:51:45.952Z"}
+{"level":"warn","message":"Telegram bot not started: Using dummy token","timestamp":"2024-11-12T13:51:46.024Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T13:51:46.026Z"}
+{"level":"info","message":"Telegram bot started","timestamp":"2024-11-12T13:56:31.850Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T13:56:31.865Z"}
+{"level":"info","message":"Telegram bot started","timestamp":"2024-11-12T13:57:45.665Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T13:57:45.671Z"}
+{"level":"info","message":"Telegram bot started","timestamp":"2024-11-12T14:00:22.964Z"}
+{"level":"info","message":"Bot commands initialized","timestamp":"2024-11-12T14:00:23.782Z"}
+{"level":"info","message":"Telegram bot started","timestamp":"2024-11-12T14:00:29.838Z"}
+{"level":"info","message":"Bot commands initialized","timestamp":"2024-11-12T14:00:30.398Z"}
+{"level":"info","message":"Telegram bot started","timestamp":"2024-11-12T14:00:35.823Z"}
+{"level":"info","message":"Bot commands initialized","timestamp":"2024-11-12T14:00:44.799Z"}
+{"level":"info","message":"Telegram bot started","timestamp":"2024-11-12T14:02:19.571Z"}
+{"level":"error","message":"Failed to start Telegram bot: 409: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running","on":{"method":"getUpdates","payload":{"allowed_updates":[],"offset":0,"timeout":50}},"response":{"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running","error_code":409,"ok":false},"stack":"Error: 409: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running\n    at Telegram.callApi (/Users/tanmaydhobale/code/jectbot/crypto-bot/node_modules/.pnpm/telegraf@4.16.3/node_modules/telegraf/lib/core/network/client.js:315:19)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Polling.[Symbol.asyncIterator] (/Users/tanmaydhobale/code/jectbot/crypto-bot/node_modules/.pnpm/telegraf@4.16.3/node_modules/telegraf/lib/core/network/polling.js:30:33)\n    at Polling.loop (/Users/tanmaydhobale/code/jectbot/crypto-bot/node_modules/.pnpm/telegraf@4.16.3/node_modules/telegraf/lib/core/network/polling.js:73:30)\n    at Telegraf.launch (/Users/tanmaydhobale/code/jectbot/crypto-bot/node_modules/.pnpm/telegraf@4.16.3/node_modules/telegraf/lib/telegraf.js:194:13)","timestamp":"2024-11-12T14:02:24.156Z"}
+{"level":"info","message":"Telegram bot started","timestamp":"2024-11-12T14:02:24.307Z"}
+{"level":"info","message":"Bot commands initialized","timestamp":"2024-11-12T14:02:36.316Z"}
+{"level":"info","message":"Telegram bot started","timestamp":"2024-11-12T14:02:36.319Z"}
+{"level":"info","message":"Bot commands initialized","timestamp":"2024-11-12T14:02:44.782Z"}
+{"level":"info","message":"Telegram bot started","timestamp":"2024-11-12T14:02:44.788Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T14:03:25.413Z"}
+{"level":"info","message":"Bot commands initialized","timestamp":"2024-11-12T14:07:16.306Z"}
+{"level":"info","message":"Telegram bot started","timestamp":"2024-11-12T14:07:16.309Z"}
+{"level":"info","message":"Registered command: /start","timestamp":"2024-11-12T14:07:21.959Z"}
+{"level":"info","message":"Registered command: /createwallet","timestamp":"2024-11-12T14:07:21.963Z"}
+{"level":"info","message":"Registered command: /balance","timestamp":"2024-11-12T14:07:21.963Z"}
+{"level":"info","message":"Registered command: /price","timestamp":"2024-11-12T14:07:21.963Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T14:07:21.998Z"}
+{"address":"0xd4239DdF7e8bd90B06A0dfc7c82B7d4E63f010a6","error":{"cause":{"code":-32600,"message":"Must be authenticated!"},"code":100,"innerError":{"code":-32600,"message":"Must be authenticated!"},"message":"Returned error: Must be authenticated!","name":"ResponseError","statusCode":401},"level":"error","message":"Error getting balance:","timestamp":"2024-11-12T14:07:37.909Z"}
+{"level":"info","message":"Bot commands initialized","timestamp":"2024-11-12T14:08:59.324Z"}
+{"level":"info","message":"Telegram bot started successfully","timestamp":"2024-11-12T14:08:59.325Z"}
+{"level":"info","message":"Registered command: /start","timestamp":"2024-11-12T14:09:00.172Z"}
+{"level":"info","message":"Registered command: /createwallet","timestamp":"2024-11-12T14:09:00.174Z"}
+{"level":"info","message":"Registered command: /balance","timestamp":"2024-11-12T14:09:00.174Z"}
+{"level":"info","message":"Registered command: /price","timestamp":"2024-11-12T14:09:00.174Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T14:09:00.212Z"}
+{"level":"info","message":"Bot commands initialized","timestamp":"2024-11-12T14:09:15.824Z"}
+{"level":"info","message":"Telegram bot started successfully","timestamp":"2024-11-12T14:09:15.825Z"}
+{"level":"info","message":"Registered command: /start","timestamp":"2024-11-12T14:09:16.364Z"}
+{"level":"info","message":"Registered command: /createwallet","timestamp":"2024-11-12T14:09:16.369Z"}
+{"level":"info","message":"Registered command: /balance","timestamp":"2024-11-12T14:09:16.370Z"}
+{"level":"info","message":"Registered command: /price","timestamp":"2024-11-12T14:09:16.370Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T14:09:16.432Z"}
+{"level":"info","message":"Bot commands initialized","timestamp":"2024-11-12T14:09:23.241Z"}
+{"level":"info","message":"Telegram bot started successfully","timestamp":"2024-11-12T14:09:23.242Z"}
+{"level":"info","message":"Registered command: /start","timestamp":"2024-11-12T14:09:23.751Z"}
+{"level":"info","message":"Registered command: /createwallet","timestamp":"2024-11-12T14:09:23.755Z"}
+{"level":"info","message":"Registered command: /balance","timestamp":"2024-11-12T14:09:23.755Z"}
+{"level":"info","message":"Registered command: /price","timestamp":"2024-11-12T14:09:23.756Z"}
+{"level":"info","message":"Server running on port 3001","timestamp":"2024-11-12T14:09:23.805Z"}
+{"address":"0xd4239DdF7e8bd90B06A0dfc7c82B7d4E63f010a6","error":{"code":"SERVER_ERROR","info":{"requestUrl":"https://eth-mainnet.g.alchemy.com/v2/your-api-key","responseBody":"[{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32600,\"message\":\"Must be authenticated!\"}},{\"jsonrpc\":\"2.0\",\"id\":2,\"error\":{\"code\":-32600,\"message\":\"Must be authenticated!\"}},{\"jsonrpc\":\"2.0\",\"id\":3,\"error\":{\"code\":-32600,\"message\":\"Must be authenticated!\"}}]","responseStatus":"401 Unauthorized"},"request":{},"response":{},"shortMessage":"server response 401 Unauthorized"},"level":"error","message":"Error getting balance:","timestamp":"2024-11-12T14:09:33.160Z"}
+{"address":"0xF9dCF8656319bb3f8fD94Dc71f1D03BCa88Ad8f5","error":{"code":"SERVER_ERROR","info":{"requestUrl":"https://eth-mainnet.g.alchemy.com/v2/your-api-key","responseBody":"[{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32600,\"message\":\"Must be authenticated!\"}},{\"jsonrpc\":\"2.0\",\"id\":2,\"error\":{\"code\":-32600,\"message\":\"Must be authenticated!\"}},{\"jsonrpc\":\"2.0\",\"id\":3,\"error\":{\"code\":-32600,\"message\":\"Must be authenticated!\"}}]","responseStatus":"401 Unauthorized"},"request":{},"response":{},"shortMessage":"server response 401 Unauthorized"},"level":"error","message":"Error getting balance:","timestamp":"2024-11-12T14:09:33.161Z"}
+{"address":"0xd4239DdF7e8bd90B06A0dfc7c82B7d4E63f010a6","error":{},"level":"error","message":"Error getting balance for wallet:","timestamp":"2024-11-12T14:09:33.162Z"}
+{"address":"0xF9dCF8656319bb3f8fD94Dc71f1D03BCa88Ad8f5","error":{},"level":"error","message":"Error getting balance for wallet:","timestamp":"2024-11-12T14:09:33.162Z"}
+{"level":"info","message":"Bot commands initialized","timestamp":"2024-11-12T14:09:59.956Z"}
+{"level":"info","message":"Telegram bot started successfully","timestamp":"2024-11-12T14:09:59.957Z"}

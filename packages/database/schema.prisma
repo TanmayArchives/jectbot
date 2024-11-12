@@ -8,14 +8,81 @@ datasource db {
 }
 
 model User {
-  id         Int      @id @default(autoincrement())
-  telegramId String   @unique
+  id         Int       @id @default(autoincrement())
+  telegramId String    @unique
   wallets    Wallet[]
+  alerts     Alert[]
+  trades     Trade[]
+  settings   Settings?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
 }
 
 model Wallet {
-  id      Int    @id @default(autoincrement())
-  address String @unique
-  userId  Int
-  user    User   @relation(fields: [userId], references: [id])
+  id        Int       @id @default(autoincrement())
+  address   String    @unique
+  userId    Int
+  user      User      @relation(fields: [userId], references: [id])
+  name      String?
+  isMain    Boolean   @default(false)
+  trades    Trade[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Alert {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+  tokenAddress String
+  condition AlertCondition
+  value     Float
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Trade {
+  id            Int      @id @default(autoincrement())
+  userId        Int
+  user          User     @relation(fields: [userId], references: [id])
+  walletId      Int
+  wallet        Wallet   @relation(fields: [walletId], references: [id])
+  tokenIn       String
+  tokenOut      String
+  amountIn      String
+  amountOut     String
+  txHash        String   @unique
+  status        TradeStatus
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Settings {
+  id                Int     @id @default(autoincrement())
+  userId            Int     @unique
+  user              User    @relation(fields: [userId], references: [id])
+  defaultSlippage   Float   @default(0.5)
+  gasPreference     GasPreference @default(NORMAL)
+  notifications     Boolean @default(true)
+  autoCompound      Boolean @default(false)
+}
+
+enum AlertCondition {
+  PRICE_ABOVE
+  PRICE_BELOW
+  LIQUIDITY_CHANGE
+  VOLUME_SPIKE
+}
+
+enum TradeStatus {
+  PENDING
+  COMPLETED
+  FAILED
+}
+
+enum GasPreference {
+  SLOW
+  NORMAL
+  FAST
 }

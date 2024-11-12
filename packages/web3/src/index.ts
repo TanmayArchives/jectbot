@@ -1,19 +1,17 @@
-export * from './web3'; 
-export * from "./utils"
+export * from './web3';
+export * from './services/SecurityScanner';
+export * from './services/DexService';
+export * from './services/PriceMonitor';
+export * from './services/RiskMonitor';
+export * from './services/WebSocketService';
+export * from './utils/logger';
+export * from './config';
 
-import { Web3 } from './web3';
-import { config } from '../config';
+import { Web3Manager } from './web3';
+import { config } from './config';
 
-export class web3Service {
-    private web3: Web3;
-
-    constructor() {
-        this.web3 = new Web3(config.RPC_URL);
-    }
-
-    async getBalance(address: string) {
-        const balance = await this.web3.eth.getBalance(address);
-        return balance;
-    }
-
+export class Web3Service extends Web3Manager {
+  constructor() {
+    super(config.RPC_URL);
+  }
 }
